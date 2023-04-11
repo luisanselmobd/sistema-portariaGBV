@@ -1,0 +1,218 @@
+li a {
+    color: initial;
+    text-decoration: none;
+    color: #D9D9D9;
+    font-size: 1.6rem;
+}
+
+.nav-principal__textos  {
+    display: none;
+    font-family: 'Inter', sans-serif;
+    text-transform: uppercase;
+    font-weight:600;
+}
+
+li a:hover, li a:active {
+    color: initial;
+    text-decoration: none;
+    color: #484C4D;
+    border-bottom: #D9D9D9 3px solid;
+    transition: ease 0.1s;
+}
+
+.menu-clicado {
+    color: initial;
+    text-decoration: none;
+    color: #0A306C;
+    border-bottom: #0885BC 3px solid;
+    transition: ease 0.1s;
+}
+
+.icones-header {
+    padding-right: 0.5rem;
+}
+
+header {
+    width: 100vw;
+    display: flex;
+    padding: 2rem 4rem;
+    box-sizing: border-box;
+    align-items: center;
+}
+
+#logo-gbv {
+    display: none;
+}
+
+#nav-principal {
+    width: 100%; 
+}
+
+#nav-principal__lista {
+    display: flex;
+    list-style: none;
+    justify-content: space-between;
+    gap: 4rem;
+}
+
+.nav-principal__itens{
+    flex-grow: 1;
+}
+
+.nav-principal__itens:last-child {
+    flex-grow: 0;
+}
+
+.nav-principal__itens:first-child {
+    text-align: end;
+}
+
+/*--------------------------*/
+
+#nav-secundaria {
+    position:absolute;
+    bottom:0;
+    width: 100%;
+    padding: 1rem 4rem;
+    box-sizing: border-box;
+}
+
+#nav-secudaria__lista {
+    display:flex;
+    justify-content: space-around;
+}
+
+.icones-main {
+    padding-right: 0.5rem;
+}
+
+.nav-secundaria__textos  {
+    display: none;
+    font-family: 'Inter', sans-serif;
+    text-transform: uppercase;
+    font-weight:600;
+}
+
+/*--------------------------*/
+
+
+@media screen and (min-width:600px) {
+    .nav-principal__textos, .nav-secundaria__textos  {
+        display: initial;
+    }    
+    li a {
+        font-size: 1.4rem;
+    }
+
+    #nav-principal__lista {
+        gap: 3rem;
+    }
+}
+
+@media screen and (min-width: 744px) {
+    #logo-gbv {
+        height: 2rem;
+        display: initial;
+    } 
+
+    li a {
+        font-size: 1.2rem;
+    }
+
+    #nav-principal__lista {
+        gap: 4rem;
+    }
+
+    #nav-secudaria__lista {
+        display:flex;
+        gap: 4rem;
+        justify-content: center;
+    }
+
+}
+
+@media screen and (min-width : 1280px) {
+    #logo-gbv {
+        height: 3rem;
+    } 
+
+    #nav-principal__lista {
+        gap: 5rem;
+    }
+
+    header {
+        padding: 1rem 4rem;
+    }
+
+
+
+/*-------------------------*/
+
+
+
+}
+
+
+footer {
+    display: block;
+    text-align: center;
+    font-family: 'Inter', sans-serif;
+    text-transform: uppercase;
+    color: #D9D9D9;
+    font-weight: 600;
+    padding-top: 2rem;
+}
+
+.painelTeste {
+    position: absolute;
+    background-color: white;
+}
+
+.menuOpcoes {
+    padding: 1rem 2rem;
+    border: 1px solid gray;
+    border-collapse:collapse;
+}
+
+
+#areaTabela {
+    width: 100vw;
+    padding-bottom: 2rem;
+
+    overflow: scroll;
+}
+
+.menuDeOpcoesCabecalho {
+    font-size: 0.7rem;
+}
+
+td {
+    padding: 0.5rem 1rem;
+    font-family: sans-serif;
+    color: #0A306C;
+    font-size: 0.8rem;
+}
+
+th {
+    white-space:nowrap;
+    text-align: left;
+    padding: 0.5rem 1rem;
+    color: #0A306C;
+    font-family: sans-serif;
+    font-size: 0.8rem;
+}
+
+.iconeMenuOpcoes {
+    font-size: 0.7rem;
+    padding-left: 0.3rem;
+    cursor: pointer;
+}
+
+
+tbody tr:nth-of-type(2n) {
+    background-color: rgb(248, 248, 248);
+}
+
+tbody tr:hover{
+    background-color: rgb(226, 226, 226);
+}
