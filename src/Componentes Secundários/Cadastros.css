@@ -1,0 +1,126 @@
+.ant-btn-lg span {
+    font-size:26px !important;
+    position: relative;
+    top: -9px;
+}
+
+.ant-btn-lg {
+    position: fixed;
+    bottom: 20px;
+    right: 20px;
+}
+
+/* #conteudo {
+  height: 100%;
+  width: 101.5%;
+  overflow-y: scroll;
+  overflow-x: auto;
+  background-color: red;
+  box-sizing: border-box;
+} */
+
+.campoTabela div {
+    display: flex;
+    align-items: center !important;
+  }
+  .ant-modal-content {
+    overflow-y: scroll;
+  }
+  
+  .conteudoExibicao {
+    height: 100%;
+    width: 100%;
+    text-align: center;
+  }
+  
+  .imagemExibicao {
+    text-align: center;
+    width: 100%;
+    box-sizing: border-box;
+    background-color: white;
+    padding: 1rem;
+  }
+  
+  .camposExibicao {
+    width: 100%;
+    box-sizing: border-box;
+    background-color: white;
+    padding: 1rem;
+  }
+  
+  .movimentacaoExibicao {
+    width: 100%;
+    background-color: white;
+    box-sizing: border-box;
+    padding: 1rem;
+  }
+  
+  ::-webkit-scrollbar {
+    width: 5px;
+    height: 5px;
+    padding: 1rem;
+  }
+    
+  ::-webkit-scrollbar-track {
+    background-color: #f5f5f5;
+  }
+  
+  ::-webkit-scrollbar-thumb {
+    background-color: #ccc;
+  }
+  
+  .fotoExibida {
+    border-radius: 50%;
+    width: 200px !important;
+    height: 200px !important;
+    object-fit: cover;
+  }
+    
+  @media screen and (min-width: 1280px) {
+  
+    .conteudoExibicao {
+      display: grid;
+      grid-template-areas: "foto campos"
+      "movimentacao movimentacao";
+      grid-template-rows:max-content;
+    }
+  
+    .imagemExibicao {
+      grid-area: foto;
+      width: fit-content;
+      height: 100%;
+      display: flex;
+      align-items: center;
+      box-sizing: border-box;
+    }
+  
+    .camposExibicao {
+      grid-area: campos;
+      height: 100%;
+      display: flex;
+      align-items: center;
+      box-sizing: border-box;
+    }
+  
+    .movimentacaoExibicao {
+      grid-area: movimentacao;
+      max-width: 100%;
+      box-sizing: border-box;
+      display: flex;
+      flex-direction: column;
+    }
+  
+    .entradaExibicao {
+      width: 100%;
+    }
+  
+    .saidaExibicao {
+      width: 100%;
+    }
+  
+  
+  
+  
+    
+    
+    }

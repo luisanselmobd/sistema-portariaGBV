@@ -1,0 +1,42 @@
+.logoGBV {
+    height: 2rem;
+    display: block;
+    margin: 0 auto;
+    padding: 1rem 0;
+}
+
+.menuHeader {
+    display: flex;
+    justify-content: center;
+    padding: 0 0 2rem 0;
+}
+
+
+
+
+@media screen and (min-width: 744px) {
+    .logoGBV {
+        height: 2rem;
+    }
+
+
+}
+
+@media screen and (min-width: 1280px) {
+
+    .logoGBV {
+        height: 2.5rem;
+        display: flex;
+        margin: 0;
+        padding: 1.5rem 0 1rem 2rem;
+        grid-area: logo;
+        justify-self: center;
+    }
+
+    .menuHeader {
+        justify-content: start;
+        padding: 0 0 2rem 1rem;
+    }
+
+    
+}
