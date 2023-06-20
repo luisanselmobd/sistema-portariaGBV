@@ -65,17 +65,7 @@ const onFinishFailed = (errorInfo) => {
       label="Usuário"
       name="usuario"
 
-      rules={[{
-        validator(rule, value){
-          return new Promise((resolve, reject) => {
-            if(value == undefined) {
-              reject('Por favor, insira o usuário!')
-            } else {
-              resolve()
-            }
-          })
-        } 
-      }]}
+      rules={[{required: true, message: "Por favor, insira o usuário!"}]}
     >
       <Input />
     </Form.Item>
