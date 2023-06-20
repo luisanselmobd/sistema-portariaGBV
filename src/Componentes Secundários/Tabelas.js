@@ -1,4 +1,4 @@
-import { Table, Button, Space, Modal, Form, Input, Upload, Switch, DatePicker } from 'antd';
+import { Table, Button, Space, Modal, Form, Input, Upload, Switch, DatePicker, message } from 'antd';
 import {useState, useEffect} from 'react'
 import Painel from './Painel'
 import './Tabelas.css'; 
@@ -126,8 +126,6 @@ const App = (props) => {
 
   const onFinish = (values) => {
 
-    console.log('VALORES', values)
-
     if(pagina == 'tabelaTerceiros') {
 
       fetch(`http://localhost:3001/terceiros/${values.id}`, {
@@ -190,7 +188,8 @@ const App = (props) => {
     
     }
 
-    console.log('Received values of form: ', values);
+    message.success("Cadastro editado com sucesso!");
+    ocultarInfos();
     }
 
 
@@ -255,6 +254,8 @@ else setOcultarSaidaMateriais(true);
           
         }
       }
+
+      
 
       
       } else {
