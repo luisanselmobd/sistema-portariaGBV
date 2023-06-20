@@ -73,7 +73,6 @@ function Cadastros(props) {
   };
 
   const ocultarInfos = () => {
-    alert();
     setinfosMostradas(false);
     if(!ocultarPlaca) registrarVeiculo()
     form.resetFields();
