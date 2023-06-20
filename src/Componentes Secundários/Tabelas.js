@@ -72,7 +72,6 @@ const App = (props) => {
 
 
   const normFile = (e) => {
-    alert()
     console.log('Upload event:', e);
     if (Array.isArray(e)) {
       return e;
